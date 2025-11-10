@@ -87,57 +87,61 @@ export const updateOrder = async (id, data) => {
   return handleResponse(response);
 };
 
+// Protocols
+export const getProtocols = async () => {
+  const response = await fetch(`${API_URL}/protocols`, { headers: getHeaders() });
+  return handleResponse(response);
+};
+
 export const createProtocol = async (data) => {
   const response = await fetch(`${API_URL}/protocols`, {
     method: 'POST',
     headers: getHeaders(),
-    body: JSON.stringify(data)port const getProtocols = async () => {
-  });  const response = await fetch(`${API_URL}/protocols`, { headers: getHeaders() });
+    body: JSON.stringify(data)
+  });
   return handleResponse(response);
 };
 
-export const updateProtocol = async (id, data) => {l = async (data) => {
-  const response = await fetch(`${API_URL}/protocols/${id}`, {(`${API_URL}/protocols`, {
-    method: 'PUT',ethod: 'POST',
+export const updateProtocol = async (id, data) => {
+  const response = await fetch(`${API_URL}/protocols/${id}`, {
+    method: 'PUT',
     headers: getHeaders(),
-    body: JSON.stringify(data)  body: JSON.stringify(data)
-  });  });
+    body: JSON.stringify(data)
+  });
   return handleResponse(response);
 };
 
-export const deleteProtocol = async (id) => {l = async (id, data) => {
-  const response = await fetch(`${API_URL}/protocols/${id}`, {(`${API_URL}/protocols/${id}`, {
-    method: 'DELETE',ethod: 'PUT',
+export const deleteProtocol = async (id) => {
+  const response = await fetch(`${API_URL}/protocols/${id}`, {
+    method: 'DELETE',
     headers: getHeaders()
-  });  body: JSON.stringify(data)
-  return handleResponse(response);  });
+  });
+  return handleResponse(response);
 };
 
 // Results
-export const createResult = async (data) => {ol = async (id) => {
-  const response = await fetch(`${API_URL}/results`, {st response = await fetch(`${API_URL}/protocols/${id}`, {
+export const createResult = async (data) => {
+  const response = await fetch(`${API_URL}/results`, {
     method: 'POST',
-    headers: getHeaders(),  headers: getHeaders()
-    body: JSON.stringify(data)  });
-  });andleResponse(response);
+    headers: getHeaders(),
+    body: JSON.stringify(data)
+  });
   return handleResponse(response);
 };
 
-export const getResults = async (params = {}) => {= async (data) => {
-  const query = new URLSearchParams(params).toString();(`${API_URL}/results`, {
-  const url = query ? `${API_URL}/results?${query}` : `${API_URL}/results`;ethod: 'POST',
+export const getResults = async (params = {}) => {
+  const query = new URLSearchParams(params).toString();
+  const url = query ? `${API_URL}/results?${query}` : `${API_URL}/results`;
   const response = await fetch(url, { headers: getHeaders() });
-  return handleResponse(response);  body: JSON.stringify(data)
-};  });
+  return handleResponse(response);
+};
 
 // Reports
 export const generateReport = async (orderId) => {
   const response = await fetch(`${API_URL}/reports/generate`, {
-    method: 'POST',s(params).toString();
-    headers: getHeaders(),const url = query ? `${API_URL}/results?${query}` : `${API_URL}/results`;
-    body: JSON.stringify({ orderId })  const response = await fetch(url, { headers: getHeaders() });
-  });andleResponse(response);
-  return handleResponse(response);
-};
+    method: 'POST',
+    headers: getHeaders(),
+    body: JSON.stringify({ orderId })
+  });
   return handleResponse(response);
 };
