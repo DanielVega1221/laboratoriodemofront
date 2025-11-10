@@ -1,0 +1,228 @@
+/* Layout principal */
+.patients-page {
+  width: 100%;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header-content h1 {
+  margin: 0 0 4px 0;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.page-description {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* Contenedor de tabla */
+.patients-container {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.patients-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.patients-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.patients-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 5px;
+}
+
+/* Tabla */
+.patients-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.patients-table thead {
+  background: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.patients-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.patients-table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s;
+}
+
+.patients-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.patients-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.patients-table td {
+  padding: 16px;
+  vertical-align: middle;
+}
+
+/* Estilos especiales */
+.dni-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #e7f3ff;
+  color: #0b6ff2;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.patient-name {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+/* Modal */
+.patient-modal {
+  max-width: 700px;
+  width: 90%;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.modal-header h2 {
+  margin: 0 0 4px 0;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.modal-subtitle {
+  margin: 0;
+  color: #6c757d;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.btn-close {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #6c757d;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.btn-close:hover {
+  background: #f8f9fa;
+  color: #dc3545;
+}
+
+/* Formulario en modal */
+.patient-modal .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.patient-modal .form-group {
+  margin-bottom: 0;
+}
+
+.patient-modal .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+}
+
+.patient-modal .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.patient-modal .form-group input:focus {
+  border-color: #0b6ff2;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(11, 111, 242, 0.1);
+}
+
+.patient-modal .form-group input::placeholder {
+  color: #adb5bd;
+}
+
+.patient-modal .form-group input.error {
+  border-color: #dc3545;
+}
+
+.patient-modal .error-text {
+  display: block;
+  margin-top: 6px;
+  color: #dc3545;
+  font-size: 12px;
+}
+
+.patient-modal .modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 2px solid #e9ecef;
+}
+
+.patient-modal .modal-actions .btn {
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: white;
+  color: #6c757d;
+  border: 2px solid #dee2e6;
+}
+
+.btn-secondary:hover {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+}

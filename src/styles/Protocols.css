@@ -1,0 +1,269 @@
+.protocols-page {
+  max-width: 1200px;
+}
+
+.protocols-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  gap: 24px;
+}
+
+.protocols-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.page-description {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.empty-state {
+  background: white;
+  border: 2px dashed #dee2e6;
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.empty-state p {
+  font-size: 16px;
+  color: #495057;
+  margin: 0 0 8px 0;
+}
+
+.empty-state small {
+  color: #6c757d;
+  font-size: 13px;
+}
+
+.protocols-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.protocol-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  border: 1px solid #e9ecef;
+}
+
+.protocol-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(11, 111, 242, 0.15);
+}
+
+.protocol-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.protocol-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  flex: 1;
+}
+
+.protocol-code {
+  background: #e7f3ff;
+  color: #0b6ff2;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.protocol-fields {
+  color: #6c757d;
+  font-size: 13px;
+  margin: 0 0 20px 0;
+}
+
+.protocol-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid #e9ecef;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.modal-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 6px 0;
+}
+
+.modal-subtitle {
+  color: #6c757d;
+  font-size: 13px;
+  margin: 0;
+  max-width: 500px;
+}
+
+.btn-close {
+  background: #f8f9fa;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 24px;
+  color: #495057;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  padding: 0;
+  line-height: 1;
+}
+
+.btn-close:hover {
+  background: #e9ecef;
+  color: #1a1a1a;
+}
+
+.section-number {
+  width: 32px;
+  height: 32px;
+  background: #0b6ff2;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 6px 0;
+}
+
+.section-subtitle {
+  color: #6c757d;
+  font-size: 13px;
+  margin: 0 0 16px 0;
+}
+
+.fields-section {
+  margin: 32px 0 24px 0;
+}
+
+.fields-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.empty-fields {
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.empty-fields p {
+  font-size: 14px;
+  color: #495057;
+  margin: 0 0 6px 0;
+}
+
+.empty-fields small {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.field-item {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.field-number {
+  width: 28px;
+  height: 28px;
+  background: white;
+  border: 2px solid #0b6ff2;
+  color: #0b6ff2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.field-content {
+  flex: 1;
+}
+
+.reference-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #dee2e6;
+}
+
+.reference-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 12px;
+}
+
+.btn-remove-field {
+  margin-top: 12px;
+  padding: 6px 12px;
+  background: #fff;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-remove-field:hover {
+  background: #dc3545;
+  color: white;
+}

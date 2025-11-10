@@ -1,0 +1,38 @@
+.patient-detail {
+  max-width: 1000px;
+}
+
+.patient-card {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.patient-card h1 {
+  margin-bottom: 20px;
+}
+
+.patient-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.info-item label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+  color: #6c757d;
+}
+
+.orders-history {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.orders-history h2 {
+  margin-bottom: 20px;
+}

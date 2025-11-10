@@ -1,0 +1,262 @@
+/* Layout principal */
+.worklist-page {
+  width: 100%;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.header-content h1 {
+  margin: 0 0 4px 0;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.page-description {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Contenedor de la tabla */
+.worklist-container {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.worklist-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.worklist-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.worklist-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 5px;
+}
+
+.worklist-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Tabla */
+.worklist-table {
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.worklist-table thead {
+  background: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.worklist-table th {
+  padding: 15px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.worklist-table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s;
+}
+
+.worklist-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.worklist-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.worklist-table td {
+  padding: 15px 16px;
+  vertical-align: middle;
+}
+
+/* Info del paciente */
+.patient-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.patient-name {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.patient-dni {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+/* Estudios */
+.studies-info {
+  color: #495057;
+  line-height: 1.5;
+}
+
+/* Checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.sample-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #28a745;
+}
+
+.checkbox-container svg {
+  color: #28a745;
+  width: 18px;
+  height: 18px;
+}
+
+/* Botones de acción */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Badges */
+.worklist-table .badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.worklist-table .badge-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.worklist-table .badge-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.worklist-table .badge-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.worklist-table .badge-in-process {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.worklist-table .badge-completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Botones */
+.action-buttons .btn-sm {
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.action-buttons .btn-primary {
+  background: #0b6ff2;
+  color: white;
+  border-color: #0b6ff2;
+}
+
+.action-buttons .btn-primary:hover {
+  background: #0958c7;
+}
+
+/* Modal */
+.modal-header-results {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.modal-header-results h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.patient-info-header {
+  margin: 0 0 8px 0;
+  color: #495057;
+  font-size: 14px;
+}
+
+.dni-small {
+  margin-left: 12px;
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.modal-subtitle {
+  margin: 0;
+  color: #6c757d;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.protocol-section {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+.protocol-section:last-child {
+  margin-bottom: 0;
+}
+
+.protocol-section h3 {
+  margin: 0 0 4px 0;
+  color: #0b6ff2;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.modal-large {
+  max-width: 900px;
+  max-height: 85vh;
+  overflow-y: auto;
+}
